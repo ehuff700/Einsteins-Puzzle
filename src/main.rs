@@ -1,3 +1,15 @@
+use possibilities::Possibilities;
+
+mod possibilities;
+mod variants;
+
 fn main() {
-    println!("Hello, world!");
+    let possibilities = Possibilities::new();
+    if let Some(houses) = possibilities.solve() {
+        for house in houses {
+            println!("{house}");
+        }
+    } else {
+        println!("no solution found")
+    }
 }
