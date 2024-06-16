@@ -1,7 +1,7 @@
 use possibilities::Possibilities;
 
 mod possibilities;
-mod variants;
+mod puzzle_types;
 
 fn main() {
     let possibilities = Possibilities::new();

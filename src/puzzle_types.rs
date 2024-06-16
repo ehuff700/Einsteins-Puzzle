@@ -1,5 +1,36 @@
 use std::fmt;
 
+/* Combinations */
+pub const COLORS: [HouseColor; 5] = [
+    HouseColor::Red,
+    HouseColor::Green,
+    HouseColor::Blue,
+    HouseColor::Yellow,
+    HouseColor::White,
+];
+pub const NATIONALITIES: [Nationality; 5] = [
+    Nationality::British,
+    Nationality::Swedish,
+    Nationality::Danish,
+    Nationality::Norwegian,
+    Nationality::German,
+];
+pub const DRINKS: [Drink; 5] = [
+    Drink::Tea,
+    Drink::Coffee,
+    Drink::Milk,
+    Drink::Beer,
+    Drink::Water,
+];
+pub const CIGARETTES: [Cigarette; 5] = [
+    Cigarette::PallMall,
+    Cigarette::Dunhill,
+    Cigarette::Brends,
+    Cigarette::Bluemasters,
+    Cigarette::Prince,
+];
+pub const PETS: [Pet; 5] = [Pet::Dog, Pet::Bird, Pet::Cat, Pet::Horse, Pet::Fish];
+
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum HouseColor {
@@ -49,36 +80,6 @@ pub enum Cigarette {
     Bluemasters,
     Prince,
 }
-
-pub const COLORS: [HouseColor; 5] = [
-    HouseColor::Red,
-    HouseColor::Green,
-    HouseColor::Blue,
-    HouseColor::Yellow,
-    HouseColor::White,
-];
-pub const NATIONALITIES: [Nationality; 5] = [
-    Nationality::British,
-    Nationality::Swedish,
-    Nationality::Danish,
-    Nationality::Norwegian,
-    Nationality::German,
-];
-pub const DRINKS: [Drink; 5] = [
-    Drink::Tea,
-    Drink::Coffee,
-    Drink::Milk,
-    Drink::Beer,
-    Drink::Water,
-];
-pub const CIGARETTES: [Cigarette; 5] = [
-    Cigarette::PallMall,
-    Cigarette::Dunhill,
-    Cigarette::Brends,
-    Cigarette::Bluemasters,
-    Cigarette::Prince,
-];
-pub const PETS: [Pet; 5] = [Pet::Dog, Pet::Bird, Pet::Cat, Pet::Horse, Pet::Fish];
 
 impl fmt::Display for HouseColor {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {

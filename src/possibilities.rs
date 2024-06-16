@@ -1,4 +1,4 @@
-use crate::variants::*;
+use crate::puzzle_types::*;
 use itertools::Itertools;
 
 pub struct House {
